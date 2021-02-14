@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#mkdir data
-#cd data
-#wget https://www.kaggle.com/gpreda/covid-world-vaccination-progress/download data
-#gunzip archive.zip
+# get the data from our world of data
+mkdir data
+wget -P data "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
+#curl --create-dirs  https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv --output data/vaccinations.csv
 
 script_dir=`dirname "$0"`
 
