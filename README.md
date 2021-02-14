@@ -40,4 +40,5 @@ There are a couple ways to terminate the server
 
 # vaccines_demo.ipynb
 This is the flow for _vaccines_demo.iynb
+
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
