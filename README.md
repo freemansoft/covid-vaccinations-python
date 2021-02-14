@@ -26,8 +26,8 @@ The included bash script will download the data and run the server. You can do i
 1. Make a directory in this directory called `data`
 1. Download the csv file (from Github)[https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv]  and put it in `data/vaccinations.csv`
 1. Start your Jupyter server
-    1. You can use any environment
-    1. I used the Kaggle Python Docker container by running `bash start-kaggle-container.sh` in this directory.  It will download the container **18GB** and start the Jupyter server.
+    1. You can use any environment, local, docker, etc
+    1. I use the (Kaggle Python Docker image](https://github.com/Kaggle/docker-python) by running `bash start-kaggle-container.sh` in this directory.  It will download the container **18GB** and start the Jupyter server.
 1. Open `Jupyter Notebook` server.  
     1. Open a browser to http://localhost:8080/ or wherever your notbook server is locate
     1. Open and run `vaccines_demo.ipynb` in the Jupyter Notebook browser view in the left pane.
@@ -38,7 +38,7 @@ There are a couple ways to terminate the server
 1. `ctrl-c` in the terminal window and answer `Y`
 1. Terminate the server in the _Jupyter Notebook_ menu in the browser window
 
-# vaccines_demo.ipynb
-This is the flow for _vaccines_demo.iynb
+# Demo: order of operations
+This is the flow for `vaccines_demo.ipynb`
 
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
