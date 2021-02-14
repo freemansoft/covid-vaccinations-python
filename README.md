@@ -30,7 +30,7 @@ The included bash script will download the data and run the server. You can do i
     1. I used the Kaggle Python Docker container by running `bash start-kaggle-container.sh` in this directory.  It will download the container **18GB** and start the Jupyter server.
 1. Open `Jupyter Notebook` server.  
     1. Open a browser to http://localhost:8080/ or wherever your notbook server is locate
-    1. Open and run `vaccines_demo.jpynb` in the Jupyter Notebook browser view in the left pane.
+    1. Open and run `vaccines_demo.ipynb` in the Jupyter Notebook browser view in the left pane.
 
 ## Shutting down the server
 There are a couple ways to terminate the server
@@ -38,6 +38,6 @@ There are a couple ways to terminate the server
 1. `ctrl-c` in the terminal window and answer `Y`
 1. Terminate the server in the _Jupyter Notebook_ menu in the browser window
 
-# vaccines_demo.jpynb
-
+# vaccines_demo.ipynb
+This is the flow for _vaccines_demo.iynb
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
