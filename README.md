@@ -49,12 +49,12 @@ We _add missing days_ and _interpolate or fill missing cell values_ `vaccines_de
 
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
 
-Sample results from various data phases 12 Feb 2021 data set
+Sample results from various data phases 17 Feb 2021 data set
 
 | category | initial | after row adddition | after interpolation |
 | -- | -- | -- | -- |
-| Number of Records | 3139 | 5796 | 5796 |
-| Daily vaccinations with data | 3770 | 3070 | 3346 |
-| Total vaccinations with data | 2088 | 2088 | 3465 |
-| Vaccinated per hundred with data | 1100 | 1100 | 1486 |
+| Number of Records | 3430 | 6138 | 6138 |
+| Daily vaccinations with data | 3302 | 3302 | 3621 |
+| Total vaccinations with data | 2259 | 2259 | 3747 |
+| Vaccinated per hundred with data | 1227 | 1227 | 1663 |
 
