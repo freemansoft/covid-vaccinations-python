@@ -60,12 +60,10 @@ We _add missing days_ and _interpolate or fill missing cell values_ `vaccination
 
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
 
-Sample results from various data phases 17 Feb 2021 data set
+Sample results from various data phases 19 Feb 2021 data set
 
-| category | initial | after row adddition | after interpolation |
-| -- | -- | -- | -- |
-| Number of Records | 3430 | 6138 | 6138 |
-| Daily vaccinations with data | 3302 | 3302 | 3621 |
-| Total vaccinations with data | 2259 | 2259 | 3747 |
-| Vaccinated per hundred with data | 1227 | 1227 | 1663 |
-
+| Phase | Number of Records | Daily Vaccinations (populated) | Total Vaccinations (populated) | Vaccinated per 100 (populated) |
+| - | - | - | - | - |
+| Initial Load             | 3679 | 3542 | 2461 | 1367 |
+| Post row fill            | 6831 | 3432 | 2461 | 1367 |
+| Post value interpolation | 6831 | 3868 | 4008 | 1837 |
