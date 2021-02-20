@@ -21,8 +21,19 @@ I used the Kaggle Python Container Image. You can use any _Anaaconda_ / _Jupyter
 * [Our world in data](https://github.com/owid/covid-19-data)
 * [Gabriel Preda](https://www.kaggle.com/gpreda) Kaggle datsethttps://www.kaggle.com/gpreda
 
-## Using these files
-The included bash script will download the data and run the server. You can do it yourself with
+## Execution with provided script
+The included bash script will download the data and run the server. 
+1. Open a terminal and `cd` to this directory
+1. execute `bash start-kaggle-container.sh` It will
+    1. download the data
+    1. download the docker image
+    1. run the container and Jupyter notebook server
+1. Open a browser to http://localhost:8080/ 
+1. Open and run `vaccinations_by_country.ipynb` in the Jupyter Notebook browser view in the left pane.
+
+
+## Manual Execution
+1. Open a terminal and `cd` to this directory
 1. Make a directory in this directory called `data`
 1. Download the csv file (from Github)[https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv]  and put it in `data/vaccinations.csv`
     1. Per their GitHub docs,, the right place to get this data set is (covid.ourworldindata.org)[https://covid.ourworldindata.org/data/vaccinations/vaccinations.csv]
@@ -31,7 +42,7 @@ The included bash script will download the data and run the server. You can do i
     1. I use the (Kaggle Python Docker image](https://github.com/Kaggle/docker-python) by running `bash start-kaggle-container.sh` in this directory.  It will download the container **18GB** and start the Jupyter server.
 1. Open `Jupyter Notebook` server.  
     1. Open a browser to http://localhost:8080/ or wherever your notbook server is locate
-    1. Open and run `vaccines_demo.ipynb` in the Jupyter Notebook browser view in the left pane.
+    1. Open and run `vaccinations_by_country.ipynb` in the Jupyter Notebook browser view in the left pane.
 
 ## Shutting down the server
 There are a couple ways to terminate the server
@@ -45,7 +56,7 @@ Source data may be missing days and columns
 
 ![Sample Data 2 Countries](covid_vaccinations_alignment_synthesis.png)
 
-We _add missing days_ and _interpolate or fill missing cell values_ `vaccines_demo.ipynb`
+We _add missing days_ and _interpolate or fill missing cell values_ `vaccinations_by_country.ipynb`
 
 ![loading and adjusting the data flow](covid_vaccinations_demo_flow.png)
 
