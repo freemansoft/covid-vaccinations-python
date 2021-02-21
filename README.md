@@ -31,6 +31,7 @@ The included bash script will download the data and run the server.
     1. run the container and Jupyter notebook server
 1. Open a browser to http://localhost:8080/ 
 1. Open and run `vaccinations_by_country.ipynb` in the Jupyter Notebook browser view in the left pane.
+    1. It will prompt you for city or state and pick the correct data file based on your prompt
 
 
 ## Manual Execution
