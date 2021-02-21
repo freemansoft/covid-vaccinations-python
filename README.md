@@ -6,15 +6,16 @@ Tracking Covid vaccinations across the globe.  _How far have we travelled along 
 ## Datasets
 * Our world in Data
     * https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations
-    * https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv
+    * https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv
+    * https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/us_state_vaccinations.csv
 * Original vaccination dataset before I found _our world of data_  This data set combines multiple data cents from the _our world in data_ repository.
     * https://www.kaggle.com/gpreda/covid-world-vaccination-progress by https://www.kaggle.com/gpreda
 
 ## Platform
-I used the Kaggle Python Container Image. You can use any _Anaaconda_ / _Jupyter Notebook_ environment.
+I used the Kaggle Python Container Image. It is way overkill for this task. 
 
 * [Kaggle Python Container Image](https://github.com/Kaggle/docker-python) data science docker container to **rule them all**
-* Any reasonable anaconda or Jupyter notebook environment _your link here_
+* Any reasonable anaconda or Jupyter notebook environment _your link here_. You can use any _Anaaconda_ / _Jupyter Notebook_ environment.
 
 ## Genesis / Credits
 * [Kenny Freeman](https://github.com/Ken-Freeman) covid project that got me interested
