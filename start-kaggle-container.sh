@@ -2,15 +2,25 @@
 
 # get the data from "Our World in Data"
 script_dir=`dirname "$0"`
-remote_source_file="https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
-dest_data_file="$script_dir/data/vaccinations.csv"
 
+remote_vaccinations_world="https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
+local_vaccinations_world="$script_dir/data/vaccinations_world.csv"
 # make sure we have a data file in a data dir in the locaton of the script
-if [ ! -f $dest_data_file ] ; then
-    echo "Downloading data file from $remote_source_file"
+if [ ! -f $local_vaccinations_world ] ; then
+    echo "Downloading data file from $remote_vaccinations_world"
     mkdir data
-    #wget -P $script_dir/data "$remote_source_file"
-    curl --create-dirs $remote_source_file --output $dest_data_file
+    #wget -P $script_dir/data "$remote_vaccinations_world"
+    curl --create-dirs $remote_vaccinations_world --output $local_vaccinations_world
+fi
+
+remote_vaccinations_states="https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/us_state_vaccinations.csv"
+local_vaccinations_states="$script_dir/data/vaccinations_state.csv"
+# make sure we have a data file in a data dir in the locaton of the script
+if [ ! -f $local_vaccinations_states ] ; then
+    echo "Downloading data file from $remote_vaccinations_states"
+    mkdir data
+    #wget -P $script_dir/data "$remote_vaccinations_states"
+    curl --create-dirs $remote_vaccinations_states --output $local_vaccinations_states
 fi
 
 # start the container only if it is not already running
