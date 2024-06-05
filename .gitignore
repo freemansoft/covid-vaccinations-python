@@ -7,7 +7,8 @@
 .keras
 .local
 .vscode
-data/
+data/*
+!data/README.md
 **/fsi*
 **/azure-variables.sh
 **/*.pem
