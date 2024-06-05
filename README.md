@@ -125,6 +125,16 @@ meta:
   description: Covid vaccination python exploration
 ```
 
+### AI Workbanch auto added when first opened
+
+| File               | Notes                                                            |
+| ------------------ | ---------------------------------------------------------------- |
+| code/.gitkeep      | make sure the directories are there for use in Jupyter notebooks |
+| models/.gitkeep    | make sure the directories are there for use in Jupyter notebooks |
+| .project/spec.yaml | Text wrap                                                        |
+| data/README.md     | converted to LFS                                                 |
+
+
 ### LFS Should be enabled for models and data
 
 No I haven't figured out the commands that AI Workbench runs.  The .gitattirbutes may be enough
