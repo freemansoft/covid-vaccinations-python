@@ -87,14 +87,14 @@ Sample results from various data phases 19 Feb 2021 data set
 
 The following files were added specifically for AI Workbench
 
-| File             | Notes                                                  |
-| ---------------- | ------------------------------------------------------ |
-| apt.txt          | none                                                   |
-| postBuild.bash   | none                                                   |
-| preBuild.bash    | none                                                   |
-| requirements.txt | This file may or may not already exist in your project |
-| variables.md     | none                                                   |
-| .gitattributes   | LFS settings for models and data                       |
+| File             | Notes                                                                     |
+| ---------------- | ------------------------------------------------------------------------- |
+| apt.txt          | Can be empty                                                              |
+| postBuild.bash   | Can be empty                                                              |
+| preBuild.bash    | Can be empty                                                              |
+| requirements.txt | This file must exist and be correct in order import a project from Github |
+| variables.md     | Can be empty                                                              |
+| .gitattributes   | LFS settings for models and data                                          |
 
 .project is the project config files. [See the project spec reference page](https://docs.nvidia.com/ai-workbench/user-guide/latest/reference/projects/spec.html#workbench-project-components)
 
@@ -127,7 +127,7 @@ meta:
 
 ### LFS Should be enabled for models and data
 
-No I haven't figured out the commands that AI Workbench runs
+No I haven't figured out the commands that AI Workbench runs.  The .gitattirbutes may be enough
 
 See [Configuring Large File Storage in GIT](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage)
 
