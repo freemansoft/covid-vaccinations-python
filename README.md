@@ -105,6 +105,26 @@ The files here were created by creating a sample project and then copying those 
 | .project/configpacks | ?     |
 | .project/spec.yaml   | ?     |
 
+## spec.yaml changes
+
+The name and image had to be changed to match this project rather than that of the one I used for a template
+
+```yaml
+meta:
+  name: my-project-template-no-cuda
+  image: project-my-project-template-no-cuda
+  description: Used to source files to make other repositories workbench compatible
+```
+
+became
+
+```yaml
+meta:
+  name: covid-vaccinations-python
+  image: covid-vaccinations-python
+  description: Covid vaccination python exploration
+```
+
 ### LFS Should be enabled for models and data
 
 No I haven't figured out the commands that AI Workbench runs
