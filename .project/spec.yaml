@@ -1,9 +1,9 @@
 specVersion: v2
 specMinorVersion: 1
 meta:
-  name: my-project-template-no-cuda
-  image: project-my-project-template-no-cuda
-  description: Used to source files to make other repositories workbench compatible
+  name: covid-vaccinations-python
+  image: covid-vaccinations-python
+  description: Covid vaccination python exploration
     - Python no CUDA
   labels: []
   createdOn: "2024-06-05T11:30:16Z"
