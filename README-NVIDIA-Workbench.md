@@ -4,6 +4,12 @@ This repository was built for Jupyter Notebooks. It wasn't configured correctly 
 
 I created an empty Workbench project that I used as a template for updating this project. I directly copied or merged those files into this repository.
 
+```mermaid
+flowchart TD
+    CreateTemplate[Create an empty AI Workbench project that uses the container image we want] -->  CloneProject[Clone your existing project] -->  CopyTemplate[Copy top level files from template to your existing project<br/>Note that the .project directory can't be seen in Jupyter notebook]  --> CopyProject[Copy the directory /.project into your cloned project] --> CopyGit[Copy .gitattributes from the template into your cloned project]--> Push[Push the updates to GitHub]
+
+```
+
 ## Converting a jpynb and requirements.txt file in to an AI Workbench project
 
 See the [project spec reference page](https://docs.nvidia.com/ai-workbench/user-guide/latest/reference/projects/spec.html#workbench-project-components) for information on the required files.
